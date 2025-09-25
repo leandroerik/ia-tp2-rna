@@ -39,19 +39,24 @@ import random
 
 print("Librerías cargadas")
 
-"""##Imágenes:"""
-##@title Acceder al Drive
-#from google.colab import drive
-#drive.mount('/content/gdrive', force_remount=True)
-#
-## directorio local en Google Drive
-#path = 'gdrive/My Drive/IA/demoIA/ImagenesNumeros' #@param {type:"string"}
-path = 'D:/Proyectos/ia-tp2-rna/backup/ImagenesNumeros' #@param {type:"string"}
-path_entrenamiento = '/train'  #@param {type:"string"}
-path_prueba = '/test'  #@param {type:"string"}
+import os
 
-imagPath_train = path + path_entrenamiento
-imagPath_test = path + path_prueba
+# Carpeta donde está el script
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Carpeta de imágenes
+path = os.path.join(script_dir, "ImagenesNumeros")
+
+# Subcarpetas de entrenamiento y prueba
+path_entrenamiento = "train"
+path_prueba = "test"
+
+# Rutas completas
+imagPath_train = os.path.join(path, path_entrenamiento)
+imagPath_test = os.path.join(path, path_prueba)
+
+print("Ruta entrenamiento:", imagPath_train)
+print("Ruta prueba:", imagPath_test)
 
 #@title Cargar imágenes
 
