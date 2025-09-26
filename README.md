@@ -7,8 +7,23 @@
 
 
 # Nuestro Trabajo
-* Ubicación: carpeta `Nuestro TP`.
+* Ubicación: `/TP2`.
 
+* Se consideran imágenes de 6 personajes de Disney:
+   * Mickey.
+   * Minnie.
+   * Donald.
+   * Daisy.
+   * Goofy.
+   * Pluto.
+
+* Técnicas de _data augmentation_ usadas para aumentar la cantidad de imánges:
+   * Flip horizontal y flip vertical.
+   * Rotación a favor de las agujas del reloj, rotación en contra de las agujas del reloj.
+   * Rotación de 180º.
+   * Aumento y diminución de brillo.
+   * Aumento y diminución de contraste.
+   
 * Se decide usar imágenes en color con un tamaño de 40x40 píxeles.
 
 * Respetando tanto el "70-30" de [EV-P] como el "80-20" de [E-V], los datos se reparten de esta manera:
@@ -16,10 +31,7 @@
     * [V] Validación:     14%
     * [P] Prueba:         30%
 
-### ...dsaads
-
-
 # RNA-MLP-procesar-imagenes.ipynb
 * Lo compartido por el profesor desde Google Colab pero levantado localmente.
-* Ubicación: carpeta `backup`.
-* ...
+* Ubicación: `/backup`.
+
